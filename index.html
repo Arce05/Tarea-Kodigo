@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Tabla con botones</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+          integrity="sha384-lZDRM0pHiUdiy+iH8I/+P2+KkZvgtN7vKC8/a0UkbDblpJfKdXp4o4Bk9z5XiS2K"
+          crossorigin="anonymous">
+
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+
+      td {
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      .green-button {
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+
+      .blue-button {
+        background-color: skyblue;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+
+      .red-button {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+
+      button i {
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+            <a href="producto.html">
+                <button class="green-button">
+                  <span>+</span> Nuevo
+                </button>
+              </a>
+          </td>
+          
+        <td>Codigo</td>
+        <td>Descripcion</td>
+        <td>Codigo de barra</td>
+        <td>Precio unitario</td>
+        <td>Stock</td>
+        <td>Proveedor</td>
+        <td>Estado</td>
+        <td>Categoria</td>
+      </tr>
+      <tr>
+        <td>
+          <button class="blue-button"><i class="fas fa-pencil-alt"></i> Editar</button>
+          <button class="red-button"><i class="fas fa-trash"></i> Eliminar</button>
+        </td>
+        <td>1</td>
+        <td>Martillo</td>
+        <td>101253151489</td>
+        <td>2.50</td>
+        <td>10</td>
+        <td>Proveedor 1</td>
+        <td>Si</td>
+        <td>Herramientas</td>
+      </tr>
+      <tr>
+        <td>
+          <button class="blue-button"><i class="fas fa-pencil-alt"></i> Editar</button>
+          <button class="red-button"><i class="fas fa-trash"></i> Eliminar</button>
+        </td>
+        <td>2</td>
+        <td>Kit de herramientas</td>
+        <td>258981235849</td>
+        <td>10.50</td>
+        <td>20</td>
+        <td>Proveedor 2</td>
+        <td>Si</td>
+        <td>Herramientas</td>
+      </tr>
+    </table>
+  </body>
+</html>
